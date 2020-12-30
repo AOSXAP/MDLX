@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+        <nav class="navbarx">
+            <a style="text-decoration: none;" href="/"><h1 class="logo">MDL</h1></a>
+        
+            <ul class="tags">
+                <a href="/">Leaderboard</a>
+                <a target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=776551374380204033&permissions=8&scope=bot">Add
+                    Bot</a>
+                <a href="/">Premium</a>
+            </ul>
+        
+        
+            <a
+                href="https://discord.com/api/oauth2/authorize?client_id=792810366975082498&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fredirect&response_type=code&scope=identify%20email%20connections%20guilds"><button
+                    class="contactx">Login</button></a>
+        </nav>
+
+    <div style="background-position: center;background-attachment: fixed;background-size: 100% 100%;" class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        data-src="https://images.pexels.com/photos/957040/night-photograph-starry-sky-night-sky-star-957040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" uk-img>
+        <h1>Leaderboard</h1>
+    </div>
+
+    <div style="background-color: black;padding: 30px;" class="uk-column-1-2 meh" uk-grid>
+
+    <% data.forEach( (user , index)  => { %>
+
+                <div class="uk-card uk-card-secondary uk-card-body uk-column-1-1 cardx">
+                    <% if(user.seccolor == '0') user.seccolor = "#000000"%>
+                    <h3 style="margin: 0;align-self: center;" class="uk-card-title"><%= index+1 %>. <%= user.user_name.substr(0, user.user_name.length - 5) %></h3>
+                    <div style="align-self: center;" class="div">
+                    <% if(user.rankcardlink != '0'){ %>
+
+                    <a onclick="this.parentElement.parentElement.style.background= 'url(<%= user.rankcardlink %>)';
+
+                    this.parentElement.parentElement.querySelector('h3').style.color = '<%= user.seccolor %>';
+                    this.parentElement.parentElement.querySelector('p').style.color = '<%= user.seccolor %>';
+                    this.parentElement.parentElement.style.backgroundRepeat = 'no-repeat';
+                    this.parentElement.parentElement.style.backgroundSize = '100% 100%';" 
+
+
+                    style="margin: 0;align-self: center;
+                    color: blueviolet;font-size: 15px;" target = "__blank" ">Rank Card Image</a>
+                    <% } %>
+                    <p style="margin: 0;font-size: 16px;align-self: center;">Level : <%= user.level %> and XP : <%= user.xp %></p>
+                    </div>
+                </div>
+
+    <% }) %>
+
+
+   
+
+
+    </div>
+
+    <script>
+        
+        function ChangeBeck(event) {
+            event.target.parentElement.style.background = 'url( user.rankcardlink )'; 
+        }
+
+    </script>
+    
+</body>
+</html>

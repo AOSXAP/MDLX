@@ -1,0 +1,361 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.impx2{
+    padding: 50px;
+    padding-bottom: 100px;
+}
+
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    padding: 0px;
+}
+
+/* ------------------------------------------------------------------- SECTION : header ------------------------------------------------------------------------>
+
+
+/* -------------- NAVBAR ------------- */
+
+.navbarx{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 15px;
+}
+
+.logo{
+    font-size: 29px;
+    color: white;
+    margin: 0;
+    align-self: center;
+}
+
+.tags{
+    position: relative;
+    align-self: center;
+    margin: 0;
+}
+
+.tags a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 0px 25px;
+}
+
+.tags a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.contactx{
+    color: white;
+    align-self: center;
+    font-weight: 500;
+    font-size: 13px;
+    border: 2px solid blueviolet;
+    border-radius: 100px;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+}
+
+.contactx:hover{
+    color: white;
+}
+
+/* -------------- Header ------------- */
+
+.headerx{
+    background-attachment: fixed;
+    background-image: url('https://images.unsplash.com/photo-1542185400-e5fc449a3249?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2350&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 70vh;
+}
+
+.textx{
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 16.7%;
+    transform: translate(-25%,-10%);
+
+}
+.textx h1{
+    font-size: 45px;
+      color: blueviolet;
+    font-weight: 400;
+}
+
+.textx h2, .textx span{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+
+.textx button{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 100px;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    color: white;
+    position: absolute;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.textx button:hover{
+    background-color: rgba(132, 0, 255, 0.74);
+}
+
+
+/* -------------- ICONS ------------- */
+
+.icons i{
+    font-size: 23px;
+    color: blueviolet;
+    margin: 16px;
+}
+
+.icons{
+
+    position: absolute;
+    top: 85%;
+    left: 16.7%;
+    transform: translate(-62%,-10%);
+
+}
+
+/* ------------------- MEDIA QUERIES ----------------- */
+
+@media only screen and (max-width: 768px) {
+
+
+
+  .textx h1 {
+    font-size: 20px;
+  }
+
+  .textx h2{
+    font-size: 17px;
+  }
+
+  .textx button{
+    width: 130px;
+    padding: 5px;
+  }
+
+  .icons{
+      transform: translate(-60px);
+  }
+
+  .icons i {
+      font-size: 20px;
+  }
+}
+
+
+/* ------------------------------------------------------------------------ A B O U T   -------------------------------------------------------------*/
+
+.about{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.about h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.about h1 span {
+    font-size: 40px;
+}  
+
+.aboutintro h1 {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    width: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aboutintro{
+    position: relative;
+    padding: 50px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.about hr{
+    border: 0.1px solid blueviolet;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ------------------------------------------------------------------------ BANNER   -------------------------------------------------------------*/
+
+.banner{
+    background-color: black;
+    margin: 40px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.banner hr{
+    border: 0.1px solid blueviolet;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 40px 0px;
+    margin-top: 0;
+}
+
+.banner h1 , .banner h1 span {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+.imagex{
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------------------ C O D E   -------------------------------------------------------------*/
+
+.code{
+    padding: 30px;
+}
+
+.code h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.code hr{
+    border: 0.1px solid blueviolet;
+    width: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0px;
+}
+
+
+/* ------------------------------------------------------------------------ FORM  -------------------------------------------------------------*/
+
+.form form{
+    padding: 60px;
+}
+
+/* ------------------------------------------------------------------------ FOOTER  -------------------------------------------------------------*/
+
+.footer{
+    background-color: black;
+}
+
+.footer h1{
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        font-size: 20px;
+        color: blueviolet;
+        text-align: center;
+        
+    }
+
+    .navbarx{
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    .tags{
+        display: flex;
+       justify-content: space-evenly;
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .textx{
+        position: relative;
+        left: 0px;
+        transform: translate(0px);
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }  
+
+
+    .textx button{
+       position: relative;
+    }
+    
+    .textx h1{
+        color: white;
+       
+    }
+
+
+    .tags a{
+        font-size: 11px;
+        align-self: center;
+        padding: 20px 0px;
+        text-align: center;
+        transform: translate(-10px);
+    }
+
+
+    .contactx{
+        width: 100%;
+    }
+
+    .icons i{
+        font-size: 15px;
+        padding: 0px;
+        margin: 15px;
+        
+    }
+
+    .aboutintro{
+        padding: 0;
+    }
+
+    .aboutintro h1{
+        width: 100%;
+        margin: 40px 0px;
+    }
+
+    .impx2{
+        padding: 10px;
+    }
+
+
+}
