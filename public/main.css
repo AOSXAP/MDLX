@@ -121,6 +121,13 @@ body{
     background-color: rgba(132, 0, 255, 0.74);
 }
 
+.skema{
+    font-size: 2px;
+}
+
+label{
+    font-size:18px;padding:5px
+}
 
 /* -------------- ICONS ------------- */
 
@@ -208,6 +215,24 @@ body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.xh1d{
+    font-size: 33px;
+}
+
+.xpi{
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blueviolet; 
+    padding: 10px 0px;
+}
+
+.xpd{
+    font-size: 20px; 
+    text-align: center;
 }
 
 /* ------------------------------------------------------------------------ BANNER   -------------------------------------------------------------*/
@@ -357,5 +382,55 @@ body{
         padding: 10px;
     }
 
+    .about h1, .about h1 span {
+        font-size: 24px;
+    }
 
+    .aboutintro h1{
+        font-size: 15px;
+    }
+
+    .xh1d{
+        font-size: 18px;
+    }
+
+    .xpd{
+        font-size: 13px;
+    }
+
+    .banner h1{
+        font-size: 25px;
+        padding: 10px;
+    } 
+    
+    .banner hr{
+        margin: 10px;
+    }
+
+    svg{
+        width: 9px;
+    }
+
+    .uk-modal-title{
+        font-size: 10px;
+    }
+
+    .code h1{
+        font-size: 24px;
+    }
+
+    .code{
+        display: none;
+    }
+
+    .footer h1{
+        font-size: 16px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+    .skema{
+        font-size: 20px;
+    }
 }
