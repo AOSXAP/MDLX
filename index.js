@@ -98,6 +98,10 @@ app.get("/auth/redirect", async(req, res) => {
     res.render('redirect.ejs' , {data:userdata})
 });
 
+app.get('/leaderb/:id', (req,res) => {
+  const id = req.params.id;
+})
+
 
 
 app.use('/', (req,res) => {

@@ -12,4 +12,20 @@ const member = new mongoose.Schema({
 
 const members = mongoose.model('members', member)
 
-module.exports = members;
+const ConnectUserDB = () => {
+  mongoose.connect(
+    `mongodb+srv://VZZE:VvVz#eE3%#@5%#2DFREcvEDw##2ssfFRrDD%^2@3-@cluster.8lzpu.mongodb.net/test`,
+    { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false }
+  );
+
+  const db = mongoose.connection;
+
+  db.on("error", console.error.bind(console, "Connection error:"));
+  db.once("open", function () {
+    console.log(`Connected to MongoDB as user`);
+  });
+};
+
+ConnectUserDB();
+
+module.exports = { members: members, ConnectUserDB };
