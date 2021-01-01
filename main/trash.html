@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="Gallery">
+        <h2 class="ghiorghtoaie ipx">Gallery</h2>
+        <hr>
+    
+        <div class="grid2"></div>
+    
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+            uk-slideshow="animation: push;min-height: 300; max-height: 600">
+    
+            <ul class="uk-slideshow-items">
+                <li style="border-radius: 10px;">
+                    <div uk-slideshow-parallax="x: 100,-100"
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="images/ss1.png" alt="MDL used on discord" uk-cover>
+                    </div>
+                </li>
+                <li style="border-radius: 10px;">
+                    <div uk-slideshow-parallax="x: 100,-100"
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                        <img src="images/ss2.png" alt="mdl bot commands" uk-cover>
+                    </div>
+                </li>
+                <li style="border-radius: 10px;">
+                    <div uk-slideshow-parallax="x: 100,-100"
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                        <img src="images/ss3.png" alt="MDL helps comunity" uk-cover>
+                    </div>
+                </li>
+            </ul>
+    
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slideshow-item="next"></a>
+    
+        </div>
+    
+    
+    </section>
+    
+    
+    <section data-aos="fade-right" class="code">
+    
+        <h1>Modules</h1>
+        <hr>
+    
+        <div style="padding: 30px;" uk-filter="target: .js-filter">
+    
+            <ul class="uk-subnav uk-subnav-pill ">
+                <li uk-filter-control=""><a href="#">All</a></li>
+                <li uk-filter-control=".tag-white"><a href="#">Free</a></li>
+                <li uk-filter-control=".tag-black"><a href="#">Premium</a></li>
+            </ul>
+    
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" uk-grid>
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>addcard</h3>
+                        <p style="font-size:17px">Adds a custom rank card for users above level 20. Suggested resolution is
+                            934x282.</p>
+                        <p style="font-size: 13px;">Usage: .maddcard [Imgur Link]</p>
+                    </div>
+                </li>
+    
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>claim</h3>
+                        <p style="font-size:17px">Claim the ownership of the VC, if it doesn`t have an owner.</p>
+                        <p style="font-size: 13px;">Usage: .mclaim</p>
+                    </div>
+                </li>
+    
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>invisible</h3>
+                        <p style="font-size:17px">Turns your VC invisible.</p>
+                        <p style="font-size: 13px;">Usage: .mban @edi#0891</p>
+                    </div>
+                </li>
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>slots</h3>
+                        <p style="font-size:17px">Changes the slots of your VC.</p>
+                        <p style="font-size: 13px;">Usage: .mslots 69</p>
+                    </div>
+                </li>
+    
+    
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>quote</h3>
+                        <p style="font-size:17px">Put a quote on your level card! Put the value 0 to remove it.</p>
+                        <p style="font-size: 13px;">Usage: .mquote [Quote of choice]</p>
+                    </div>
+                </li>
+    
+    
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>autovcset</h3>
+                        <p style="font-size:17px">Sets up the servers Auto VC System!</p>
+                        <p style="font-size: 13px;">Usage: .mautovcset [VoiceChannel ID]</p>
+                    </div>
+                </li>
+    
+    
+    
+    
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>massban</h3>
+                        <p style="font-size:17px">Works like a usual ban command but you can select more than 1 user.</p>
+                        <p style="font-size: 13px;">Usage: .mmassban @AP#9279 <br>
+                            .mmassban @AP#9279 edi#0891 ...</p>
+                    </div>
+                </li>
+    
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>global</h3>
+                        <p style="font-size:17px">Displays the global leaderboard.</p>
+                        <p style="font-size: 13px;">Usage: .mglobal</p>
+                    </div>
+                </li>
+    
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>challenge</h3>
+                        <p style="font-size:17px">Challenge a user to a minigame of choice! Current available minigames:
+                            TicTacToe</p>
+                        <p style="font-size: 13px;">Usage: .mchallenge @AP#9279</p>
+                    </div>
+                </li>
+    
+    
+    
+    
+    
+            </ul>
+    
+    
+            <a style="color: blueviolet; left: 50%;transform: translateX(-50%);font-size: 20px;position: absolute;"
+                href="https://top.gg/bot/776551374380204033">See All Modules...</a>
+    
+        </div>
+    
+    
+    </section data-aos="fade-left">
+    
+</body>
+</html>

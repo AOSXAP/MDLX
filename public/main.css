@@ -316,8 +316,12 @@ label{
 
 
 .formy{
-    margin: 0 auto;
-    width: 50%;
+    margin: 0px auto;
+    width: 70%;
+}
+
+.formx{
+    margin: 100px;
 }
 
 .labelx{
