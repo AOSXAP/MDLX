@@ -28,7 +28,7 @@
         
         
             <a
-                href="https://discord.com/api/oauth2/authorize?client_id=792810366975082498&redirect_uri=https%3A%2F%2Fmdlx.herokuapp.com%2Fauth%2Fredirect&response_type=code&scope=identify%20email%20guilds%20connections"><button
+                href="https://discord.com/api/oauth2/authorize?client_id=792810366975082498&redirect_uri=https%3A%2F%2Fmdlx.herokuapp.com%2Fauth%2Fredirect&response_type=code&scope=identify%20guilds%20connections%20email"><button
                     class="contactx">Login</button></a>
         </nav>
 
@@ -44,7 +44,7 @@
                 <div class="uk-card uk-card-secondary uk-card-body uk-column-1-1 cardx">
                     <% if(user.seccolor == '0') user.seccolor = "#000000"%>
                     <h3 style="margin: 0;align-self: center;" class="uk-card-title"><%= index+1 %>. <%= user.user_name.substr(0, user.user_name.length - 5) %></h3>
-                    <div style="align-self: center;" class="div">
+                    <div style="align-self: center;transition: all 0.6s ease;" class="div">
                     <% if(user.rankcardlink != '0'){ %>
 
                     <a onclick="this.parentElement.parentElement.style.background= 'url(<%= user.rankcardlink %>)';
@@ -53,7 +53,6 @@
                     this.parentElement.parentElement.querySelector('p').style.color = '<%= user.seccolor %>';
                     this.parentElement.parentElement.style.backgroundRepeat = 'no-repeat';
                     this.parentElement.parentElement.style.backgroundSize = '100% 100%';" 
-
 
                     style="margin: 0;align-self: center;
                     color: blueviolet;font-size: 15px;" target = "__blank" ">Rank Card Image</a>

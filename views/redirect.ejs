@@ -90,7 +90,7 @@
         
         
             <a
-                href="https://discord.com/api/oauth2/authorize?client_id=792810366975082498&redirect_uri=https%3A%2F%2Fmdlx.herokuapp.com%2Fauth%2Fredirect&response_type=code&scope=identify%20email%20guilds%20connections"><button 
+                href="https://discord.com/api/oauth2/authorize?client_id=792810366975082498&redirect_uri=https%3A%2F%2Fmdlx.herokuapp.com%2Fauth%2Fredirect&response_type=code&scope=identify%20guilds%20connections%20email"><button 
                     class="contactx" disabled >Login</button></a>
         </nav>
 
@@ -130,10 +130,31 @@
 
 
         <br>
+    <div class="all">
+    <% data[2].forEach(data => { %>
 
-        <a class="a2" href="https://discord.com/api/oauth2/authorize?client_id=776551374380204033&permissions=8&scope=bot">Add MDL to your Server!</a>
+        <% if(data.owner==true){ %>
 
-    </body>
+            <div style="text-align: center;" class="card">
+                <div class="card-image">
+                    <figure class="majie" style="position: relative;" class="image is-4by3">
+                        <% if(data.icon != null){ %>
+                            <a class="mehxy" target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=776551374380204033&guild_id=<%=data.id%>&permissions=8&scope=bot"><img class="mehpic2" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></a>
+                        <% }else{ %>
+                        <a  class="mehxy" target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=776551374380204033&guild_id=<%=data.id%>&permissions=8&scope=bot"><img class="mehpic2" src="https://i.imgur.com/gGAOi3m.png"
+                                alt="Placeholder image"></a>
+                        <% } %>
+                        <div class="info">
+                            <p><%=data.name%></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+        <% } %>
+
+    <%}) %>  
+    </div>
 
 </body>
 </html>

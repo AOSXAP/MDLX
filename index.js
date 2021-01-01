@@ -95,9 +95,7 @@ app.get("/auth/redirect", async(req, res) => {
 
     });
 
-    res.json(data.data);
-
-    //res.render('redirect.ejs' , {data:userdata})
+    res.render('redirect.ejs' , {data:userdata})
 });
 
 

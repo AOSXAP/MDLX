@@ -286,6 +286,41 @@ label{
     text-align: center;
 }
 
+.mehpic2{
+    width: 350px;
+    height: 350px;
+}
+
+
+.info{
+    display: none;
+}
+
+.info p{
+    font-size: 20px;
+    color: white;
+}
+
+.mehxy{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.mehxy:hover{
+    -webkit-filter: brightness(45%);
+    transition: all 0.6s ease;
+}
+
+.mehxy:hover + .info{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    display: block;
+}
 
 /* ----------------------------------------------------------- Gallery ----------------------------------------------------------- */
 
@@ -353,7 +388,7 @@ label{
 }
 
 .hero-body h1{
-    font-size: 32px;
+    font-size: 27px;
 }
 
 .hero-body p, .hero-body p a{
@@ -388,7 +423,29 @@ label{
 
 /* ----------------------------------------------------------- MQ ----------------------------------------------------------- */
 
+.all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.mehpic2{
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 754px){
+    .all{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+
+    .all{
+        display: none;
+    }
+
     .logo{
         font-size: 20px;
         color: blueviolet;
@@ -538,4 +595,11 @@ label{
     .formy{
         width: 80%;
     }
+
+    .mehpic2{
+        width: 300px;
+        height: 200px;
+    }
+
+
 }
