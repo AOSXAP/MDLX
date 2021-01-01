@@ -1,6 +1,5 @@
 const express = require('express');
 const fetch = require('node-fetch');
-const btoa = require('btoa');
 const ejs =require("ejs");
 const DiscordOauth2 = require("discord-oauth2");
 const oauth = new DiscordOauth2();
