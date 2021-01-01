@@ -24,13 +24,14 @@ app.get('/' , (req,res) => {
 })
 
 app.post('/',async(req,res) => {
-  const {name , text , desc} = req.body;
+  const {name , text , desc ,rec} = req.body;
   console.log(name + " " + text + " " + desc);
 
   const Review = new RateSchema({
     name,
     text,
-    experience:desc
+    experience:desc,
+    rec
   })
 
   await Review.save();
@@ -99,37 +100,6 @@ app.get("/auth/redirect", async(req, res) => {
 });
 
 
-const Stripe = require('stripe')('sk_test_51I44QAFzKbwZM6CUu8y4uoyUHm0dFRZaE3MRMGaDTqZ3Q5ntl2a5y5x4t5VOmhJNAZLMHQd9Jlpf9P8ZludVsDra003iRw9gDB');
-
-app.get('/payxd' , (req,res) => {
-  res.render("pay.ejs", {
-    key:
-      "pk_test_51I44QAFzKbwZM6CURrNiBa2zxG76Rqh9wgcQ98M3qcDfgn6f51DDIrHEGmzCxFjjN78eMHvGZ9WZ3gKLtFg4Fb4600enE52NQi",
-  });
-})
-
-app.post('/payment' , (req,res) => {
-    Stripe.customers
-      .create({
-        email: req.body.stripeEmail,
-        source: req.body.stripeToken,
-      })
-      .then((customer) => {
-        return Stripe.charges.create({
-          amount: 2500,
-          description: "Product",
-          currency: "EUR",
-          customer: customer.id,
-        });
-      })
-      .then((charge) => {
-        res.send("Success"); 
-      })
-      .catch((err) => {
-        res.send(err); 
-      }); 
-})
-
 
 app.use('/', (req,res) => {
   res.render('404.ejs');
@@ -142,5 +112,6 @@ app.listen(port, (err) => {
 });
 
 //934 lines of code 29 - 12 - 2020
-//skema
 //1189 lines of code 30 - 12 - 2020
+//1196 lines of code 31 - 12 - 2020 (redesign)
+//1329 lines of code 1 - 1- 2021

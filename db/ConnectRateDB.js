@@ -17,7 +17,8 @@ const ConnectRateDB = () => {
 const rateSchema = new mongoose.Schema({
     name:String,
     experience:String,
-    text:String
+    text:String,
+    rec:String
 })
 
 const RateSchema = mongoose.model("review", rateSchema);
