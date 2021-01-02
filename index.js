@@ -4,7 +4,6 @@ const ejs =require("ejs");
 const DiscordOauth2 = require("discord-oauth2");
 const oauth = new DiscordOauth2();
 const {ConnectRateDB, RateSchema} = require('./db/ConnectRateDB');
-const { members, ConnectUserDB } = require("./db/ConnectUserDB");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const app = express();
@@ -120,10 +119,15 @@ app.get('/premium' , (req,res)=> {
   res.render('premium.ejs');
 })
 
+app.get('/modules' , (req,res) => {
+  res.sendFile(__dirname+'/main'+'/trash.html');
+})
+
 
 app.use('/', (req,res) => {
   res.render('404.ejs');
 })
+
 
 app.listen(port, (err) => {
   if (!err) {

@@ -3,55 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modules</title>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
 
-    <section class="Gallery">
-        <h2 class="ghiorghtoaie ipx">Gallery</h2>
-        <hr>
-    
-        <div class="grid2"></div>
-    
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-            uk-slideshow="animation: push;min-height: 300; max-height: 600">
-    
-            <ul class="uk-slideshow-items">
-                <li style="border-radius: 10px;">
-                    <div uk-slideshow-parallax="x: 100,-100"
-                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="images/ss1.png" alt="MDL used on discord" uk-cover>
-                    </div>
-                </li>
-                <li style="border-radius: 10px;">
-                    <div uk-slideshow-parallax="x: 100,-100"
-                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
-                        <img src="images/ss2.png" alt="mdl bot commands" uk-cover>
-                    </div>
-                </li>
-                <li style="border-radius: 10px;">
-                    <div uk-slideshow-parallax="x: 100,-100"
-                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
-                        <img src="images/ss3.png" alt="MDL helps comunity" uk-cover>
-                    </div>
-                </li>
+    <nav class="navbarx">
+            <a style="text-decoration: none;align-self: center;" href="/"><h1 class="logo">MDL</h1></a>
+
+            <ul class="tags">
+                <a href="/leaderboard">Leaderboard</a>
+                <a target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=776551374380204033&permissions=8&scope=bot">Add Bot</a>
+                <a href="/premium">Premium</a>
             </ul>
+
+            
+            <a href="https://discord.com/api/oauth2/authorize?client_id=792810366975082498&redirect_uri=https%3A%2F%2Fmdlx.herokuapp.com%2Fauth%2Fredirect&response_type=code&scope=identify%20guilds%20connections%20email"><button class="contactx">Login</button></a>
+        </nav>
     
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                uk-slideshow-item="next"></a>
+    <section class="code">
     
+        <div style="padding: 20px;" class="text">
+            <h1 style="text-align: center;font-size: 27px;margin-bottom: 0px;">Modules</h1>
+            <hr style="border: 1px solid blueviolet;width: 40px;left: 50%;transform: translate(-50%);position: absolute;margin-bottom: 20px;">
         </div>
-    
-    
-    </section>
-    
-    
-    <section data-aos="fade-right" class="code">
-    
-        <h1>Modules</h1>
-        <hr>
     
         <div style="padding: 30px;" uk-filter="target: .js-filter">
     
@@ -70,60 +57,113 @@
                         <p style="font-size: 13px;">Usage: .maddcard [Imgur Link]</p>
                     </div>
                 </li>
-    
-                <li class="tag-black">
-                    <div class="uk-card uk-card-secondary uk-card-body">
-                        <h3>claim</h3>
-                        <p style="font-size:17px">Claim the ownership of the VC, if it doesn`t have an owner.</p>
-                        <p style="font-size: 13px;">Usage: .mclaim</p>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>cardavatar</h3>
+                        <p style="font-size:17px">AChoose to display or to not display your avatar on the rank card.</p>
+                        <p style="font-size: 13px;">Usage: .mcardavatar</p>
                     </div>
                 </li>
-    
-                <li class="tag-black">
-                    <div class="uk-card uk-card-secondary uk-card-body">
-                        <h3>invisible</h3>
-                        <p style="font-size:17px">Turns your VC invisible.</p>
-                        <p style="font-size: 13px;">Usage: .mban @edi#0891</p>
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>primarycolor</h3>
+                        <p style="font-size:17px">Changes the primary color of your level card. Put the value to 0 to remove it.</p>
+                        <p style="font-size: 13px;">Usage:.primarycolor [HEX]</p>
                     </div>
                 </li>
-                <li class="tag-black">
-                    <div class="uk-card uk-card-secondary uk-card-body">
-                        <h3>slots</h3>
-                        <p style="font-size:17px">Changes the slots of your VC.</p>
-                        <p style="font-size: 13px;">Usage: .mslots 69</p>
-                    </div>
-                </li>
-    
-    
+
+
+
                 <li class="tag-white">
                     <div class="uk-card uk-card-default uk-card-body">
                         <h3>quote</h3>
                         <p style="font-size:17px">Put a quote on your level card! Put the value 0 to remove it.</p>
-                        <p style="font-size: 13px;">Usage: .mquote [Quote of choice]</p>
+                        <p style="font-size: 13px;">.mquote [QUOTE]</p>
                     </div>
                 </li>
-    
-    
-                <li class="tag-black">
-                    <div class="uk-card uk-card-secondary uk-card-body">
-                        <h3>autovcset</h3>
-                        <p style="font-size:17px">Sets up the servers Auto VC System!</p>
-                        <p style="font-size: 13px;">Usage: .mautovcset [VoiceChannel ID]</p>
-                    </div>
-                </li>
-    
-    
-    
-    
+
+
+
                 <li class="tag-white">
                     <div class="uk-card uk-card-default uk-card-body">
-                        <h3>massban</h3>
-                        <p style="font-size:17px">Works like a usual ban command but you can select more than 1 user.</p>
-                        <p style="font-size: 13px;">Usage: .mmassban @AP#9279 <br>
-                            .mmassban @AP#9279 edi#0891 ...</p>
+                        <h3>removecard</h3>
+                        <p style="font-size:17px">Removes your custom card and reverts to the original one.</p>
+                        <p style="font-size: 13px;">Usage: .mremovecard</p>
                     </div>
                 </li>
-    
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>primarycolor</h3>
+                        <p style="font-size:17px">Changes the primary color of your level card. Put the value to 0 to remove it.</p>
+                        <p style="font-size: 13px;">Usage:.primarycolor [HEX]</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>secondarycolor</h3>
+                        <p style="font-size:17px">Changes the secondary color of your level card. Put the value to 0 to remove it.</p>
+                        <p style="font-size: 13px;">.msecondarycolor [HEX]</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>challenge</h3>
+                        <p style="font-size:17px">Challenge a user to a minigame of choice! Current available minigames: TicTacToe</p>
+                        <p style="font-size: 13px;">Usage: .mchallenge [@TAG]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>help</h3>
+                        <p style="font-size:17px">Lists all the commands or info about a specific command.</p>
+                        <p style="font-size: 13px;">Usage: .mhelp</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>invite</h3>
+                        <p style="font-size:17px">Sends a message with a hyper link to invite the bot.</p>
+                        <p style="font-size: 13px;">Usage: .minvite</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>stats</h3>
+                        <p style="font-size:17px">Displays the stats of the bot.</p>
+                        <p style="font-size: 13px;">Usage: .mstats</p>
+                    </div>
+                </li>
+
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>support</h3>
+                        <p style="font-size:17px">Sends a message with a hyper link to join the bots support server.</p>
+                        <p style="font-size: 13px;">Usage: .msupport</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>upvote</h3>
+                        <p style="font-size:17px">Sends a message with a hyper link to upvote the bot on top.gg</p>
+                        <p style="font-size: 13px;">Usage: .mupvote</p>
+                    </div>
+                </li>
+
                 <li class="tag-white">
                     <div class="uk-card uk-card-default uk-card-body">
                         <h3>global</h3>
@@ -131,30 +171,234 @@
                         <p style="font-size: 13px;">Usage: .mglobal</p>
                     </div>
                 </li>
-    
+
                 <li class="tag-white">
                     <div class="uk-card uk-card-default uk-card-body">
-                        <h3>challenge</h3>
-                        <p style="font-size:17px">Challenge a user to a minigame of choice! Current available minigames:
-                            TicTacToe</p>
-                        <p style="font-size: 13px;">Usage: .mchallenge @AP#9279</p>
+                        <h3>level</h3>
+                        <p style="font-size:17px">Shows a users level.</p>
+                        <p style="font-size: 13px;">Usage: .mlevel</p>
                     </div>
                 </li>
-    
-    
-    
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>chanlock</h3>
+                        <p style="font-size:17px">Locks a channel.</p>
+                        <p style="font-size: 13px;">Usage: .mchanlock</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>chanunlock</h3>
+                        <p style="font-size:17px">Unlocks a locked channel.</p>
+                        <p style="font-size: 13px;">Usage: .mchanunlock</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>massban</h3>
+                        <p style="font-size:17px">Works like a usual ban command but you can select more than 1 user.</p>
+                        <p style="font-size: 13px;">Usage: .mmassban [@USERS]</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>masskick</h3>
+                        <p style="font-size:17px">Works like a usual kick command but you can select more than 1 user.</p>
+                        <p style="font-size: 13px;">Usage: .mmasskick [USERS]</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>massmute</h3>
+                        <p style="font-size:17px">Works like a usual mute command but you can mute more than 1 user at once.</p>
+                        <p style="font-size: 13px;">Usage: .mmassmute [@USERS]</p>
+                    </div>
+                </li>
+
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>massunmute</h3>
+                        <p style="font-size:17px">Works like a usual mute command but you can mute more than 1 user at once.</p>
+                        <p style="font-size: 13px;">Usage: .mmassmute [@USERS]</p>
+                    </div>
+                </li>
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>giphy</h3>
+                        <p style="font-size:17px">Search GIFs on Giphy!</p>
+                        <p style="font-size: 13px;">Usage:.mgiphy [QUERY]</p>
+                    </div>
+                </li>
+                
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>urban</h3>
+                        <p style="font-size:17px">Search word definitions on urban dictionary.</p>
+                        <p style="font-size: 13px;">Usage: .murban [QUERY]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>wiki</h3>
+                        <p style="font-size:17px">Search the whole wiki from Discord.</p>
+                        <p style="font-size: 13px;">Usage: .mwiki [QUERY]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>linkrole</h3>
+                        <p style="font-size:17px">Links a role to a level.</p>
+                        <p style="font-size: 13px;">Usage: .mlinkrole [ROLE_ID][LEVEL]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-white">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3>removelinkedrole</h3>
+                        <p style="font-size:17px">Removes a linked role and deletes said role.</p>
+                        <p style="font-size: 13px;">Usage: .mremovelinkedrole [ROLE_ID]</p>
+                    </div>
+                </li>
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>claim</h3>
+                        <p style="font-size:17px">Claim the ownership of the VC, if it doesn`t have an owner.</p>
+                        <p style="font-size: 13px;">Usage: .mclaim</p>
+                    </div>
+                </li>
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>allow</h3>
+                        <p style="font-size:17px">Allows a user/users into a VC.</p>
+                        <p style="font-size: 13px;">Usage: .mallow @edi#0891</p>
+                    </div>
+                </li>
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>ban</h3>
+                        <p style="font-size:17px">Bans a user from your VC.</p>
+                        <p style="font-size: 13px;">Usage: .mban [@TAG]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>invisible</h3>
+                        <p style="font-size:17px">Turns your VC invisible.</p>
+                        <p style="font-size: 13px;">Usage: .mban [@TAG]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>kick</h3>
+                        <p style="font-size:17px">Kicks a user from your VC.</p>
+                        <p style="font-size: 13px;">Usage: .mkick @edi#0891</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>lock</h3>
+                        <p style="font-size:17px">Locks your VC.</p>
+                        <p style="font-size: 13px;">Usage: .mlock</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>name</h3>
+                        <p style="font-size:17px">Changes the name of your VC.</p>
+                        <p style="font-size: 13px;">Usage: .mname [Name of choice]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>slots</h3>
+                        <p style="font-size:17px">Changes the slots of your VC.</p>
+                        <p style="font-size: 13px;">Usage: .mslots [NUMBER]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>transfer</h3>
+                        <p style="font-size:17px">Transfers the ownership.</p>
+                        <p style="font-size: 13px;">Usage: .mtransfer [@TAG]</p>
+                    </div>
+                </li>
+
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>unlock</h3>
+                        <p style="font-size:17px">Unlocks your VC.</p>
+                        <p style="font-size: 13px;">Usage: .munlock</p>
+                    </div>
+                </li>
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>visible</h3>
+                        <p style="font-size:17px">Turns your VC visible.</p>
+                        <p style="font-size: 13px;">Usage: .mvisible</p>
+                    </div>
+                </li>
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>autovcset</h3>
+                        <p style="font-size:17px">Sets up the servers Auto VC System!.</p>
+                        <p style="font-size: 13px;">Usage: .mautovcset [VoiceChannel ID]</p>
+                    </div>
+                </li>
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>servercard</h3>
+                        <p style="font-size:17px">Sets up the servers custom rank card! Put the value 0 to remove it.</p>
+                        <p style="font-size: 13px;">Usage: .mservercard [Imgur Link]</p>
+                    </div>
+                </li>
+
+                <li class="tag-black">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h3>whitelistrole</h3>
+                        <p style="font-size:17px">Whitelists a role for the AutoVC system. Makes a mods job way easier!</p>
+                        <p style="font-size: 13px;">Usage: .mwhitelistrole [Role_ID]</p>
+                    </div>
+                </li>
+                
     
     
             </ul>
     
-    
-            <a style="color: blueviolet; left: 50%;transform: translateX(-50%);font-size: 20px;position: absolute;"
-                href="https://top.gg/bot/776551374380204033">See All Modules...</a>
-    
         </div>
     
     
-    </section data-aos="fade-left">
+    </section>
     
 </body>
 </html>
