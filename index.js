@@ -4,17 +4,17 @@ const ejs =require("ejs");
 const DiscordOauth2 = require("discord-oauth2");
 const oauth = new DiscordOauth2();
 const {ConnectRateDB, RateSchema} = require('./db/ConnectRateDB');
+const { members, ConnectUserDB } = require("./db/ConnectUserDB");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const app = express();
-
 const port = process.env.PORT || 3000;
+
+ConnectRateDB();
 
 app.use(express.static(__dirname + "/public"));
 
 app.set('view engine' , ejs);
-
-ConnectRateDB();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -98,10 +98,27 @@ app.get("/auth/redirect", async(req, res) => {
     res.render('redirect.ejs' , {data:userdata})
 });
 
-app.get('/leaderb/:id', (req,res) => {
+app.get('/leaderb/:id', async(req,res) => {
   const id = req.params.id;
+    fetch("https://gabor500.aosxap.repl.co/")
+      .then((resp) => resp.json())
+      .then(async(data) => {newdata = await data.filter(ob => ob.guild_id === id); res.render('leaderboard1.ejs' ,{data:newdata})});
+
 })
 
+app.get('/search_guild' , (req,res) => {
+  res.render('search_guild.ejs');
+})
+
+app.post('/search_guild', (req,res) => {
+  const id = req.body.gid;
+  console.log(id);
+  res.redirect(`/leaderb/${id}`);
+})
+
+app.get('/premium' , (req,res)=> {
+  res.render('premium.ejs');
+})
 
 
 app.use('/', (req,res) => {

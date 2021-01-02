@@ -14,7 +14,7 @@ const members = mongoose.model('members', member)
 
 const ConnectUserDB = () => {
   mongoose.connect(
-    `mongodb+srv://VZZE:VvVz#eE3%#@5%#2DFREcvEDw##2ssfFRrDD%^2@3-@cluster.8lzpu.mongodb.net/test`,
+    `mongodb+srv://VZZE:VvVz%23eE3%25%23%405%25%232DFREcvEDw%23%232ssfFRrDD%25%5E2%403-@cluster.8lzpu.mongodb.net/database?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false }
   );
 
@@ -22,10 +22,8 @@ const ConnectUserDB = () => {
 
   db.on("error", console.error.bind(console, "Connection error:"));
   db.once("open", function () {
-    console.log(`Connected to MongoDB as user`);
+    console.log(`Connected to MongoDB as boss`);
   });
 };
-
-ConnectUserDB();
 
 module.exports = { members: members, ConnectUserDB };

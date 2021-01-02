@@ -381,24 +381,39 @@ label{
 
 /* ----------------------------------------------------------- FOOTER ----------------------------------------------------------- */
 
+.footerb{
+    background-color: black;
+    padding: 30px;
+}
 
-.hero-body h1 , .hero-body p{
+.elm{
+    text-align: center;
+}
+
+.elm i{
+    font-size: 30px;
     color: white;
-    padding: 20px 100px;
 }
 
-.hero-body h1{
-    font-size: 27px;
-}
-
-.hero-body p, .hero-body p a{
-    font-size: 16px;
-}
-
-.hero-body p a{
+.elm i:hover{
     color: blueviolet;
 }
 
+.fh2{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.fhr{
+    width: 50px;
+    align-self: center;
+    position: relative;
+    left: 50%;
+    border: 0.1px solid blueviolet;
+    transform: translate(-50%);
+    margin: 20px 0px 40px 0px;
+}
 
 /* ------------------------------------------------------------------------ C O D E   -------------------------------------------------------------*/
 
@@ -466,6 +481,18 @@ label{
         padding: 0px;
         text-align: center;
         align-self: center;
+    }
+
+    .elm i{
+        font-size: 23px;
+    }
+
+    .formx h2{
+        font-size: 26px;
+    }
+
+    .fh2{
+        font-size: 26px;
     }
 
     .textx{
@@ -593,7 +620,7 @@ label{
     }
 
     .formy{
-        width: 80%;
+        width: 100%;
     }
 
     .mehpic2{

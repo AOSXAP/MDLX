@@ -5,6 +5,7 @@
     justify-content: space-between;
     height: 29vh;
     position: relative;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 450px) {

@@ -17,13 +17,39 @@
 
 </head>
 <body>
+    <style>
+        .searchg{
+            background-color: black;
+        }
+
+        .searchg h2{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .searchg h2 a{
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+            color: blueviolet;
+        }
+
+        @media only screen and (max-width:600px){
+        .searchg h2 a{
+            font-size: 17px;
+        }
+        }
+    </style>
         <nav class="navbarx">
-            <a style="text-decoration: none;" href="/"><h1 class="logo">MDL</h1></a>
+            <a style="text-decoration: none;align-self: center;" href="/"><h1 class="logo">MDL</h1></a>
         
             <ul class="tags">
-                <a href="/">Leaderboard</a>
+                <a href="/leaderboard">Leaderboard</a>
                 <a target="__blank" href="https://discord.com/api/oauth2/authorize?client_id=776551374380204033&permissions=8&scope=bot">Add
                     Bot</a>
+                <a href="/premium">Premium</a>
             </ul>
         
         
@@ -35,6 +61,10 @@
     <div style="background-position: center;background-attachment: fixed;background-size: 100% 100%;" class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
         data-src="https://images.pexels.com/photos/957040/night-photograph-starry-sky-night-sky-star-957040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" uk-img>
         <h1>Leaderboard</h1>
+    </div>
+
+    <div class="searchg">
+        <h2><a href="/search_guild">Search for your Guild!</a></h2>
     </div>
 
     <div style="background-color: black;padding: 30px;" class="uk-column-1-2 meh" uk-grid>
