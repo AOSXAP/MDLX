@@ -696,4 +696,22 @@ label{
         width: 50%;
     }
 
+    .banner{
+        display: none;
+    }
+
+    .lbannerx{
+        display: none;
+    }
+
+    .formx{
+        margin: 80px 40px;
+        margin-top: 20px;
+    }
+
+    .ghiorghtoaie{
+        font-size: 1.7rem;
+    }
+
+
 }
