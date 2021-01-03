@@ -6,7 +6,9 @@ const oauth = new DiscordOauth2();
 const {ConnectRateDB, RateSchema} = require('./db/ConnectRateDB');
 const bodyParser = require("body-parser");
 require("dotenv").config();
+
 const app = express();
+
 const port = process.env.PORT || 3000;
 
 ConnectRateDB();
@@ -139,3 +141,4 @@ app.listen(port, (err) => {
 //1189 lines of code 30 - 12 - 2020
 //1196 lines of code 31 - 12 - 2020 (redesign)
 //1329 lines of code 1 - 1- 2021
+//2098 lines of code 2 - 1- 2021 (V2 -  Modules , Local Leaderboard , Redesign)

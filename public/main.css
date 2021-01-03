@@ -233,8 +233,9 @@ label{
 }
 
 .about hr{
-    border: 0.1px solid blueviolet;
+    border-top: 0.1px solid blueviolet;
     width: 50px;
+    opacity: 0.8;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -257,6 +258,9 @@ label{
 
 /* ------------------------------------------------------------------------ BANNER   -------------------------------------------------------------*/
 
+
+
+
 .banner{
     background-color: black;
     margin: 40px;
@@ -265,9 +269,12 @@ label{
 }
 
 .banner hr{
-    border: 0.1px solid blueviolet;
+    border: 0;
+    border-top: 0.1px solid blueviolet;
     width: 50px;
+    opacity: 0.8;
     position: relative;
+    background-color: blueviolet;
     left: 50%;
     transform: translateX(-50%);
     margin: 40px 0px;
@@ -322,41 +329,17 @@ label{
     display: block;
 }
 
-/* ----------------------------------------------------------- Gallery ----------------------------------------------------------- */
-
-.Gallery{
-    background-color: black;
-    padding: 60px;
-    padding-bottom: 140px;
-    margin: 40px;
-    margin-top: 80px;
-    border-radius: 10px;
-}
-
-.Gallery hr {
-    border: 0.1px solid blueviolet;
-    width: 50px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 40px 0px;
-    margin-top: 0;
-}
-
-.ipx{
-    color: white;
-}
 
 /* ----------------------------------------------------------- FORM ----------------------------------------------------------- */
 
 
 .formy{
     margin: 0px auto;
-    width: 70%;
+    width: 100%;
 }
 
 .formx{
-    margin: 100px;
+    margin: 40px;
 }
 
 .labelx{
@@ -365,8 +348,10 @@ label{
 }
 
 .formx hr{
-    border: 0.1px solid blueviolet;
+    background-color: blueviolet;
+    border-top: 0.1px solid blueviolet;
     width: 50px;
+    opacity: 1;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -410,7 +395,11 @@ label{
     align-self: center;
     position: relative;
     left: 50%;
-    border: 0.1px solid blueviolet;
+    background-color: blueviolet;
+    border: 0;
+    border-bottom: 0.1px solid blueviolet;
+    padding: 0;
+    opacity: 0.7;
     transform: translate(-50%);
     margin: 20px 0px 40px 0px;
 }
@@ -434,6 +423,50 @@ label{
     left: 50%;
     transform: translateX(-50%);
     margin: 20px 0px;
+}
+
+
+/* ----------------------------------------------------------- lbanenr ----------------------------------------------------------- */
+
+.lbannerx{
+   background: url('https://media.discordapp.net/attachments/795056789963931668/795060893187571750/banner_360_00000.png?width=1440&height=270');
+   background-repeat: no-repeat;
+   background-size: cover;
+    margin: 40px;
+    height: 360px;
+    border-radius: 10px;
+    background-position: center;
+    text-align: center;
+    margin-right: 40px;
+    position: relative;
+}
+
+.rbg h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.rbg hr{
+    border-top: 0.1px solid blueviolet;
+    opacity: 1;
+    width: 50px;
+    position: relative;
+    left: 50%;transform: translate(-50%);
+}
+
+
+.reviews{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.divr1{
+    margin: 20px;
+}
+
+.divr1 p{
+    font-size: 15px;
 }
 
 /* ----------------------------------------------------------- MQ ----------------------------------------------------------- */
@@ -628,5 +661,9 @@ label{
         height: 200px;
     }
 
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
 
 }

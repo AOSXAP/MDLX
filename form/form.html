@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+            align-items: center;
+            background-color: white;
+            padding: 70px 130px 70px 120px;
+            border-radius: 10px;
+        }
+
+        .inph2{
+            padding: 0px 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 33px;
+            color: #333; 
+            margin: 10px 0;
+        }
+
+        .w12{padding: 20px;}
+
+        .formadv{
+            display: flex;flex-direction: column;
+        }
+
+        .inpx1, .inpx2{
+            display: flex;flex-direction: column;width: 40%;
+        }
+        .inpx1 {float: left;}
+
+        .inpx2{float: right;}
+
+        .full{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .submit{
+            margin: 20px;
+            font-family: 'Poppins', sans-serif;
+            padding:  6px;
+            width: 100px;
+            background-color: blueviolet;
+            color: white;
+            border: 1px solid blueviolet;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        input{border: none;border-bottom: 1px solid blueviolet;margin-top:10px ;height: 40px;outline: none;
+        font-family: 'Poppins', sans-serif;}
+
+        input:focus{
+            transition: ease-in;
+            border: none;
+            border-bottom: 1px solid blueviolet;
+        }
+
+    </style>
+    <div class="form">
+        <form class="formadv">
+            <h2 class="inph2">Contact Us</h2>
+            <hr style="margin: 0 22px;width: 90px;border: 1px solid blueviolet;left: 0;">
+            <div class="w12">
+                <div  class="inpx1">
+                    <label for="inp1">inp1</label>
+                    <input placeholder="How was your exp" class="inp1">
+                </div>
+                <div class="inpx2">
+                    <label for="inp2">inp2</label>
+                    <input placeholder="How was your exp" class="inp2">
+                </div>
+            </div>
+            <div class="full">
+                <label for="inp3">Labelx</label>
+                <input placeholder="How was your exp" class="inp3">
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
