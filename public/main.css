@@ -666,4 +666,8 @@ label{
         flex-direction: column;
     }
 
+    .textx button{
+        width: 50%;
+    }
+
 }
