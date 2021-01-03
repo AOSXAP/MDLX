@@ -335,12 +335,37 @@ label{
 
 .formy{
     margin: 0px auto;
-    width: 100%;
+    width: 70%;
+}
+
+.xyz{
+    border: none;border-bottom: 1px solid blueviolet;margin-top:10px ;
+    height: 40px;outline: none;width: 100%;background-color: white;
+    font-size: 16px;
+}
+
+
+.xyz:focus{
+    transition: 0.2s ease-in-out;
+    border: none;
+    border-bottom: 1px solid rgb(10, 10, 10);
 }
 
 .formx{
-    margin: 40px;
+    margin: 160px 40px;
+} 
+
+.mmm{
+    width: 45%;
 }
+
+.lilform{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
 
 .labelx{
     font-size: 18px;
