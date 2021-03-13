@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const ConnectRateDB = () => {
   mongoose.connect(
-    `mongodb+srv://andrei:lostxap2004@cluster0.5hqnb.mongodb.net/auth?retryWrites=true&w=majority`,
+    `own-stuff`,
     { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false }
   );
 
