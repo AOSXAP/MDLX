@@ -40,7 +40,7 @@ app.post('/',async(req,res) => {
 })
 
 app.get('/leaderboard', (req,res)=>{
-  fetch("https://serverapi.aosxap.repl.co")
+  fetch("link1")
     .then((resp) => resp.json())
     .then((data) => res.render("leaderboard2.ejs" , {data:data.data}));
 
@@ -101,7 +101,7 @@ app.get("/auth/redirect", async(req, res) => {
 
 app.get('/leaderb/:id', async(req,res) => {
   const id = req.params.id;
-    fetch("https://gabor500.aosxap.repl.co/")
+    fetch("link2")
       .then((resp) => resp.json())
       .then(async(data) => {newdata = await data.filter(ob => ob.guild_id === id); res.render('leaderboard1.ejs' ,{data:newdata})});
 
@@ -136,9 +136,3 @@ app.listen(port, (err) => {
     console.log(`Server Started at ${process.env.PORT}`);
   }
 });
-
-//934 lines of code 29 - 12 - 2020
-//1189 lines of code 30 - 12 - 2020
-//1196 lines of code 31 - 12 - 2020 (redesign)
-//1329 lines of code 1 - 1- 2021
-//2098 lines of code 2 - 1- 2021 (V2 -  Modules , Local Leaderboard , Redesign)
